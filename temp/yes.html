@@ -1,0 +1,18 @@
+{% extends  'index.html' %}
+<html>
+    <body>
+        {% block content %}
+
+        {% for i in l %}
+        <h>{{i}}</h>
+        <br>
+        {% endfor %}
+        <h1> confirm  the  slot  </h1>
+        <form actions='' method='POST'>
+            {% csrf_token %}
+            <button> confirm 
+            </button>
+        </form>
+        {% endblock %}
+    </body>
+</html>

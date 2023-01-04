@@ -1,0 +1,184 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>login</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Travello template project">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+	<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+</head>
+
+<body>
+
+	<div class="super_container">
+
+		<!-- Header -->
+
+	
+
+		<!-- Menu -->
+
+		
+			
+			</div>
+			<div class="menu_social">
+				<div class="menu_phone ml-auto">Call us: 00-56 445 678 33</div>
+				<ul class="d-flex flex-row align-items-start justify-content-start">
+					<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Home -->
+
+		<div class="home">
+
+			<!-- Home Slider -->
+			<div class="home_slider_container">
+				<div class="owl-carousel owl-theme home_slider">
+
+					<!-- Slide -->
+					<div class="owl-item">
+						<div class="background_image"
+							style="background-image:url({% static 'images/home.jpg' %})"></div>
+						<div class="home_slider_content_container">
+							<div class="container">
+								<div class="row">
+									<div class="col">
+										<div class="home_slider_content">
+											<div class="home_title">
+												<h2> hey bro  </h2>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+        </div>
+      </div> 					
+		</div>
+
+		<!-- Search -->
+
+		<div class="home_search">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_search_container">
+							<div class="home_search_title"> LOGIN </div>
+							<div class="home_search_content">
+								<form action="login" class="home_search_form" id="home_search_form" method="POST" name="in">
+									{% csrf_token %}]
+									<div>
+										<div class="form-outline mb-4">
+											<input type="email" id="email" class="form-control form-control-lg" name="email" />
+											<label class="form-label" for="typeEmailX-2">Email</label>
+                                        </div>
+      
+                                        <div class="form-outline mb-4">
+                                          <input type="password" id="password" class="form-control form-control-lg"  name="password"/>
+                                          <label class="form-label" for="typePasswordX-2">Password</label>
+                                        </div>
+      
+                
+                                        <div class="form-check d-flex justify-content-start mb-4">
+                                           <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                                           <label class="form-check-label" for="form1Example3"> Remember password </label>
+                                        </div>
+      
+                                        <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+                                        <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #7c3b98;"
+                                        type="submit"><a href="register" >Sign in </a> </button>
+                                        <hr class="my-4">
+                  
+                                        <button class="btn btn-lg btn-block btn-primary" style="background-color: #dd4b39;" type="submit">
+										<i class="fab fa-google me-2"></i>
+										<a href={% url 'social:begin' 'google-oauth2' %}> Sign in with google</a>
+									    </button>
+                                        <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;"
+                                        type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with facebook</button>
+						          </div>
+                  
+							    </form>
+
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		<!-- Destinations -->
+
+		
+
+		<!-- News -->
+
+
+
+		<!-- Footer -->
+
+		<footer class="footer">
+			<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/footer_1.jpg' %}" data-speed="0.8">
+							</div>
+							
+								<div class="row footer_contact_row">
+									<div class="col-xl-10 offset-xl-1">
+										<div class="row">
+
+											<!-- Footer Contact Item -->
+											
+
+											<!-- Footer Contact Item -->
+											
+											<!-- Footer Contact Item -->
+											
+
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col text-center">
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;
+								<script>document.write(new Date().getFullYear());</script> All rights
+								reserved | This template
+								is made
+								with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+									target="_blank">Colorlib</a>
+								<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+							</div>
+							</footer>
+						</div>
+
+						<script src="{% static 'js/jquery-3.2.1.min.js' %}">
+						</script>
+						<script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
+						<script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
+						<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+						<script src="{% static 'plugins/Isotope/isotope.pkgd.min.js' %}"></script>
+						<script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js' %}"></script>
+						<script src="{% static 'plugins/easing/easing.js' %}"></script>
+						<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+						<script src="{% static 'js/custom.js' %}"></script>
+</body>
+
+</html>

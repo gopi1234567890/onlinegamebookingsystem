@@ -1,0 +1,14 @@
+{% extends  'index.html' %}
+<html>
+    <body>
+        {% block content %}
+         
+        {% for i in l %}
+        <h>{{i}}</h>
+        <br>
+        {% endfor %}
+        <h1> no   slot  </h1>
+        
+        {% endblock %}
+    </body>
+</html>
